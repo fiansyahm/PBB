@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_ax" type="id" />
+    <item name="id_bx" type="id" />
+    <item name="id_cx" type="id" />
+    <item name="id_r1x" type="id" />
+    <item name="id_r2x" type="id" />
+    <item name="id_hitung" type="id" />
+</resources>
