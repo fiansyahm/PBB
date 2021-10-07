@@ -1,7 +1,7 @@
 package com.example.dbsederhana;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+// halo
 import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.database.Cursor;
