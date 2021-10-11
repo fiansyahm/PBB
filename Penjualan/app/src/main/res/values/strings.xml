@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">sale</string>
+    <string name="hint1">Customer`s name</string>
+    <string name="hint2">Product`s name</string>
+    <string name="hint3">Total item</string>
+    <string name="hint4">Product`s price</string>
+    <string name="hint5">Total money</string>
+    <string name="nameCus">Name Customer</string>
+    <string name="nameItem">Nama Barang :</string>
+    <string name="sumItem">Jumlah Barang :</string>
+    <string name="priceItem">Harga : Rp </string>
+    <string name="totalPrice">Uang Bayar : </string>
+    <string name="process">Tambah</string>
+    <string name="deletedata">Hapus Data</string>
+    <string name="exit">Keluar</string>
+</resources>

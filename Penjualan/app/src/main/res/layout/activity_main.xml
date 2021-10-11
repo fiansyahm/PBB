@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="166dp"
+            android:layout_height="53dp"
+            android:text="@string/nameCus"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/etNamaPelanggan"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/first"
+            android:autofillHints="CustomerName"
+            android:hint="@string/hint1"
+            android:textColorHint="@color/black"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:minWidth="48dp"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="167dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/first"
+            android:text="@string/nameItem"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNamaBarang"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/second"
+            android:autofillHints="ItemName"
+            android:hint="@string/hint2"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/third"
+            android:layout_width="168dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/second"
+            android:text="@string/sumItem"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etJmlBarang"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/third"
+            android:autofillHints="Total Item"
+            android:hint="@string/hint3"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/fourth"
+            android:layout_width="169dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/third"
+            android:text="@string/priceItem"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etHarga"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/fourth"
+            android:autofillHints="Price"
+            android:hint="@string/hint4"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:id="@+id/fifth"
+            android:layout_width="168dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/fourth"
+            android:text="@string/totalPrice"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etJmlUang"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fourth"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/fifth"
+            android:autofillHints="TotalPrice"
+            android:hint="@string/hint5"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/btnProses"
+            android:layout_width="wrap_content"
+            android:layout_height="62dp"
+            android:layout_below="@id/fifth"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/process"
+            android:textColor="@android:color/white" />
+
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="78dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/fifth"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@id/btnProses"
+            android:background="@drawable/bg_button"
+            android:text="Edit"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="104dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/fifth"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@id/btnEdit"
+            android:background="@drawable/bg_button"
+            android:text="Delete"
+            android:textColor="@android:color/white" />
+
+        <View
+            android:id="@+id/sixth"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/btnProses"
+            />
+
+        <TextView
+            android:id="@+id/tvNamaPembeli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/sixth"
+            />
+
+        <TextView
+            android:id="@+id/tvNamaBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvNamaPembeli"
+            />
+
+        <TextView
+            android:id="@+id/tvJmlBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvNamaBarang"
+            />
+
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvJmlBarang"
+            />
+
+        <TextView
+            android:id="@+id/tvUangBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvHarga"
+            />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvUangBayar"
+            />
+
+        <TextView
+            android:id="@+id/tvKembalian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvTotal"
+            />
+
+        <TextView
+            android:id="@+id/tvBonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvKembalian"
+            />
+
+        <TextView
+            android:id="@+id/tvKeterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvBonus"
+            />
+
+        <Button
+            android:id="@+id/btnHapus"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvKeterangan"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/deletedata"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btnKeluar"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/exit"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/btnHapus"
+            />
+    </RelativeLayout>
+</ScrollView>

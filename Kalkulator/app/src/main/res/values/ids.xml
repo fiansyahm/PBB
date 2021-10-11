@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_bil1" type="id" />
+    <item name="id_bil2" type="id" />
+    <item name="id_hasil" type="id" />
+    <item name="buttonTambah" type="id" />
+    <item name="buttonKurang" type="id" />
+    <item name="buttonBagi" type="id" />
+    <item name="buttonKali" type="id" />
+</resources>
